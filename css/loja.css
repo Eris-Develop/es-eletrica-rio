@@ -1,0 +1,129 @@
+ 
+.loja {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.loja h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.carrossel {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider2 {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin: 0 10px;
+  flex: 0 0 300px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card h3 {
+  margin: 10px;
+  font-size: 1.2em;
+}
+
+.card .potencia,
+.card .preco,
+.card .garantia,
+.card .estrelas {
+  margin: 0 10px 10px 10px;
+  font-size: 0.9em;
+}
+
+.card .cupom {
+  margin: 10px;
+  padding: 8px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card .cupom:hover {
+  background-color: #218838;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.cupom {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.cupom input {
+  padding: 8px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+.cupom button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cupom button:hover {
+  background-color: #0069d9;
+}
+
+#mensagem-cupom {
+  margin-top: 10px;
+  color: green;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .slider2 {
+    flex-wrap: nowrap;
+  }
+
+  .card {
+    flex: 0 0 80%;
+    margin: 0 5%;
+  }
+}
