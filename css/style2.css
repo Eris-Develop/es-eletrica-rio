@@ -162,15 +162,6 @@
       width: auto;
       object-fit: cover;
     }
-    
-    @keyframes slid {
-      0% { transform: translateX(0); }
-      33% { transform: translateX(-100%); }
-      66% { transform: translateX(-200%); }
-      100% { transform: translateX(0); }
-    }
-    
-  
   }
   
   /*==============================
