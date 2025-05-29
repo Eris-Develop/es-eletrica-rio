@@ -1,1 +1,0 @@
-"# es-eletrica-rio"  
